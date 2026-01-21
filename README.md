@@ -1,0 +1,66 @@
+Rental Tools API Automation (MVC/Controller Pattern)
+📝 Project Overview
+This project is a high-level API automation framework designed for the Rental Tools API. It implements an MVC-inspired Controller architecture to ensure a clean separation between API interaction logic, data models, and actual test scenarios.
+
+Key Highlights:
+Controller Pattern: Every API resource (Orders, Tools, Auth, Status) has its own dedicated Controller class to manage HTTP requests.
+
+Advanced Fixtures: Custom Playwright fixtures are used to automatically handle dependency injection of controllers and seamless authentication token management.
+
+Type Safety: Full TypeScript integration with interfaces for all request payloads and API responses.
+
+Serial Execution: Critical lifecycle tests (like Order management) are executed in serial mode to maintain data integrity.
+
+🛠 Technology Stack
+Playwright Test - Core test runner and request engine.
+
+TypeScript - Language for static typing and robust development.
+
+Dotenv - Environment variable management (Base URL, credentials).
+
+Path Aliases: Simplified imports using @controllers, @models, and @fixtures.
+
+📂 Project Structure
+.
+├── api/
+│   ├── constants/      # ENDPOINTS definitions 
+│   ├── controllers/    # API Resource Controllers (Logic layer)
+│   ├── fixtures/       # Custom Playwright fixtures
+│   └── models/         # TypeScript Interfaces for API objects
+├── tests/              # Test suites (Spec files)
+├── playwright.config.ts # Global configuration
+└── tsconfig.json       # Path alias and compiler settings
+⚙️ Configuration & Setup
+1. Installation
+Clone the repository and install dependencies:
+
+Bash
+npm install
+2. Environment Variables
+Create a .env file in the root directory:
+
+Code snippet
+BASE_URL=https://api.example.com
+3. Execution
+Run all tests:
+
+Bash
+npm test
+Run a specific suite (e.g., Health Check):
+
+Bash
+npm run test:status
+🧪 Implementation Details
+Automated Authentication
+The framework uses a registeredToken fixture. It automatically checks if a token exists; if not, it registers a new client and shares the token across the test suite to minimize redundant API calls.
+
+Order Lifecycle Management
+The order.spec.ts demonstrates a full CRUD lifecycle:
+
+Setup: Fetch available tools.
+
+Create: POST a new order and store the ID.
+
+Verify: GET order details and validate data integrity.
+
+Cleanup: DELETE the order to maintain a clean environment.

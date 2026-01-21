@@ -1,9 +1,3 @@
-Ovaj projekat predstavlja napredni framework za automatizaciju API testova, izgrađen korišćenjem **Playwright** alatke i **TypeScript** jezika. Arhitektura je zasnovana na **Controller pattern-u** (često se naziva i API Object Model), koji je varijacija MVC obrasca prilagođena testiranju backend servisa.
-
-Evo predloga za tvoj `README.md` na engleskom jeziku:
-
----
-
 # Rental Tools API Automation (MVC/Controller Pattern)
 
 ## 📝 Project Overview
@@ -97,11 +91,3 @@ The `order.spec.ts` demonstrates a full CRUD lifecycle:
 2. **Create:** POST a new order and store the ID.
 3. **Verify:** GET order details and validate data integrity.
 4. **Cleanup:** DELETE the order to maintain a clean environment.
-
----
-
-### Kontakt za poslodavce
-
-U ovaj `README` možeš dodati i direktan link ka svom LinkedIn profilu ili portfoliju kako bi kompletirao utisak.
-
-Da li želiš da dodam još neku sekciju, na primer o **Reporting-u** ili **CI/CD** integraciji?

@@ -1,7 +1,7 @@
 # Rental Tools API Automation (MVC/Controller Pattern)
 
 [![Playwright Logo](https://img.shields.io/badge/Playwright-v1.57-brightgreen?logo=playwright&style=for-the-badge)](https://playwright.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.93-blue?logo=typescript&style=for-the-badge)](https://www.typescriptlang.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-blue?logo=typescript&style=for-the-badge)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-v24.11-green?logo=node.js&style=for-the-badge)](https://nodejs.org/)
 
 ## 📝 Project Overview

@@ -1,5 +1,9 @@
 # Rental Tools API Automation (MVC/Controller Pattern)
 
+[![Playwright Logo](https://img.shields.io/badge/Playwright-v1.x-brightgreen?logo=playwright&style=for-the-badge)](https://playwright.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.x-blue?logo=typescript&style=for-the-badge)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-v16%2B-green?logo=node.js&style=for-the-badge)](https://nodejs.org/)
+
 ## 📝 Project Overview
 
 This project is a high-level API automation framework designed for the **Rental Tools API**. It implements an **MVC-inspired Controller architecture** to ensure a clean separation between API interaction logic, data models, and actual test scenarios.
